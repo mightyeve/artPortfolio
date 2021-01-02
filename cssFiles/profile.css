@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+@font-face {
+    font-family: 'Breathing';
+    src: url('../fonts/Breathing.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'parkway-lush';
+    src: url('../fonts/parkway-lush.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+html{
+  font-size: 10px;
+  font-family: 'Patrick Hand', cursive;
+  color:mediumvioletred;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  background: white
+  
+}
+
+a{
+  text-decoration: none;
+}
+
+p{
+  font-size: 2.2rem;
+  font-weight:300;
+}
+
+img{
+  width:100%;
+
+}
+
+header{
+  width: 100%;
+  height:100vh;
+}
+
+
+/***************navigation menu and hamburger toggler**************/
+.nav2 {
+  background-color: #726cf8;
+  background-image: linear-gradient(to right, #726cf8 0%, #e975a8 74%);
+  font-family: "parkway-lush";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  transform: translateX(-100%);
+  transition: transform .4s ease;
+  z-index: 200;
+}
+
+.nav2.active {
+  transform: translateX(0);
+  
+}
+
+.nav2 ul {
+  padding-top: 12rem;
+  list-style-type: none;
+  text-align: center;
+  font-size: 20rem;
+}
+
+.nav2 ul li {
+  margin: 14px 0;
+}
+
+.nav2 a {
+  color: white;
+  display: block;
+  font-size: 5rem;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 1rem;
+  text-align: center;
+}
+
+.nav2 a:hover {
+  font-size: 7rem;
+}
+
+.toggle {
+  border: none;
+  background-color: #726cf8;
+  background-image: linear-gradient(to right, #726cf8 0%, #e975a8 74%);
+  border-radius: 0px 0px 25px 0px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px 15px;
+  position: absolute;
+  top: 0;
+  right: 1px;
+  outline: none;
+  transform: translateX(100%);
+}
+
+.toggle:focus {
+  outline: none;
+}
+
+.toggle .fa-bars {
+  display: block;
+}
+
+.toggle .fa-times {
+  display: none;
+}
+
+.nav2.active .toggle .fa-bars {
+  display: none;
+}
+
+.nav2.active .toggle .fa-times {
+  display: flex;
+
+}
+
+.nav2.active .toggle{
+  left: -2.5%;
+  right: 0%;
+  background: transparent;
+  background-color: transparent;
+  position: absolute;
+  transition: transform .4s ease;
+  color: white;
+}
+  /****************************************************************/
+
+  /*HEADER TEXT****************************************************/
+  
+.header-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+
+}
+
+.header-text h1{
+  font-size: 20rem;
+  font-family: 'parkway-lush', sans-serif;
+  background-color: #726cf8;
+  background-image: linear-gradient(315deg, #726cf8 0%, #e975a8 74%);
+  -webkit-background-clip: text;
+      background-clip: text;
+  -webkit-text-fill-color: transparent;
+  user-select:none;
+}
+
+  /****************************************************************/
+
+
+
+
+/*ABOUT************************************************************/
+.about{
+  padding-top:100rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.profile-container {
+  padding-top: 50rem;
+
+}
+
+.profile {
+  background-color: #4834d4;
+  background-image: linear-gradient(315deg, #4834d4 0%, #0c0c0c 74%);
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0.1, 0, 0.1);
+  display: flex;
+  max-width: 100%;
+  margin: 20px;
+  overflow: hidden;
+  width: 1000px;
+  
+}
+
+.profile-info button{
+  margin-left: 45%;
+ 
+}
+
+.profile p {
+  color: white;
+  margin: 0;
+  letter-spacing: 1px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.profile h1 {
+  background-color: #726cf8;
+  background-image: linear-gradient(to left, #6c9bf8 0%, #e975a8 50%); 
+   -webkit-background-clip: text;
+      background-clip: text;
+  -webkit-text-fill-color: transparent;
+  user-select:none;
+  font-family: "parkway-lush";
+  font-size: 9rem;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+
+.profile-preview {
+  background-image: url(../img/profile.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 700px;
+  padding: 30px;
+
+}
+
+/********Contact buttons****/
+.contact {
+  width: 600px;
+  margin-left: -80px;
+  z-index: 300;
+  margin-top: -20px;
+  justify-content: center;
+  border-radius: 80px;
+  text-align: center;
+}
+
+.contact span {
+  background-color: #726cf8;
+  background-image: linear-gradient(to left, #6c9bf8 0%, #e975a8 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  user-select:none;
+  width: 200px;
+  line-height: 80px;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 7rem;
+  position: absolute;
+  font-family: "parkway-lush";
+  border: 5px lightpink solid;
+  border-radius: 10px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
+.contact nav {
+  font-size: 0;
+  width: 775px;
+}
+
+.contact a {
+  line-height: 80px;
+  width: 80px;
+  text-align: center;
+  display: inline-block;
+  background-color: transparent;
+  color: #fff;
+  overflow: hidden;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  margin: 0 -20px;
+  width: 500px;
+  
+  
+}
+.contact a:nth-child(1) {
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  margin-left: 0;
+}
+.contact a:nth-child(1):hover {
+  background-color: tomato;
+  border-radius: 10px;
+}
+.contact a:nth-child(2):hover {
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);   
+  border-radius: 10px;
+}
+.contact a:nth-child(3):hover {
+  background-color: #61c5ec;
+  border-radius: 10px;
+  
+}
+
+.contact:hover span, .contact.hover span {
+  opacity: 0;
+}
+.contact:hover a, .contact.hover a {
+  border-radius: 50%;
+  margin: 0 10px;
+  color:white;
+  font-size: 28px;
+}
+.contact:hover a:hover, .contact.hover a:hover {
+  color: #fff;
+}
+
+/****************************************************************/
+
+
+
+
+
+/****section*****************************************************/
+
+section{
+  padding: 20rem 10rem;
+  
+}
+
+.section-heading h1{
+  font-size: 15rem;
+  font-weight: 300;
+  color: rgba(255,255,255,.3);
+  text-transform: uppercase;
+  font-family: 'parkway-lush';
+  text-align: center;
+  position: relative;
+  margin-bottom: 1rem;
+  background-color: #726cf8;
+  background-image: linear-gradient(to right, #726cf8 0%, #e975a8 74%);
+  -webkit-background-clip: text;
+      background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+
+}
+
+.section-heading h6{
+  font-size: 4rem;
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: 20rem;
+}
+/****************************************************************/
+
+
+
+
+
+
+/*******COMMISSIONS*************************************************/
+
+.my-services{
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2.5rem;
+  text-align: center;
+}
+
+.service{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+ 
+}
+
+.service h1{
+  color: #990099;
+  letter-spacing: 2px;
+  
+  font-family: "Breathing";
+  margin: 2rem -2px 2rem 0; 
+  padding-top: 5rem;
+  padding-left: 50%;
+  font-size: 5rem;
+}
+
+.service p{
+  font-size: 2.2vw;
+  padding-left: 50%;
+  padding-bottom: 70px;
+  
+}
+
+
+.skillImg img{
+
+  left: 15%;
+  width: 35%;
+  height: auto;
+  border-radius: 10px;
+  position: absolute;
+  animation: showMe 1.6s linear infinite 0s forwards;
+  animation-play-state: paused;	
+}
+
+.skillImg:hover img{
+animation-play-state: running;
+}
+
+.skillImg img:nth-child(1){
+z-index: 9;
+}
+.skillImg img:nth-child(2){
+animation-delay: 0.2s;
+z-index: 8;
+}
+.skillImg img:nth-child(3){
+animation-delay: 0.4s;
+z-index: 7;
+}
+.skillImg img:nth-child(4){
+animation-delay: 0.6s;
+z-index: 6;
+}
+.skillImg img:nth-child(5){
+animation-delay: 0.8s;
+z-index: 5;
+}
+.skillImg img:nth-child(6){
+animation-delay: 1.0s;
+z-index: 4;
+}
+.skillImg img:nth-child(7){
+animation-delay: 1.2s;
+z-index: 3;
+}
+.skillImg img:nth-child(8){
+animation-delay: 1.4s;
+z-index: 2;
+}
+.skillImg img:nth-child(9){
+animation-delay: 1.6s;
+z-index: 1;
+}
+
+@keyframes showMe {
+  0% { visibility: visible; z-index: 100; }
+12.5% { visibility: visible; z-index: 100; }
+25% { visibility: hidden; z-index: 0; }
+  100% { visibility: hidden; z-index: 0; }
+}
+
+
+
+
+.skillImg2 img{
+  margin-top: 1rem;
+  left: 15%;
+  width: 35%;
+  height: auto;
+  border-radius: 10px;
+  position: absolute;
+  animation: showMe 1.6s linear infinite 0s forwards;
+  animation-play-state: paused;	
+}
+
+.skillImg2:hover img{
+animation-play-state: running;
+}
+
+.skillImg2 img:nth-child(1){
+z-index: 9;
+}
+.skillImg2 img:nth-child(2){
+animation-delay: 0.2s;
+z-index: 8;
+}
+.skillImg2 img:nth-child(3){
+animation-delay: 0.4s;
+z-index: 7;
+}
+.skillImg2 img:nth-child(4){
+animation-delay: 0.6s;
+z-index: 6;
+}
+.skillImg2 img:nth-child(5){
+animation-delay: 0.8s;
+z-index: 5;
+}
+.skillImg2 img:nth-child(6){
+animation-delay: 1.0s;
+z-index: 4;
+}
+.skillImg2 img:nth-child(7){
+animation-delay: 1.2s;
+z-index: 3;
+}
+.skillImg2 img:nth-child(8){
+animation-delay: 1.4s;
+z-index: 2;
+}
+.skillImg2 img:nth-child(9){
+animation-delay: 1.6s;
+z-index: 1;
+}
+
+@keyframes showMe {
+  0% { visibility: visible; z-index: 100; }
+12.5% { visibility: visible; z-index: 100; }
+25% { visibility: hidden; z-index: 0; }
+  100% { visibility: hidden; z-index: 0; }
+}
+
+
+
+
+.skillImg3 img{
+  margin-top: 4rem;
+  left: 15%;
+  width: 35%;
+  height: auto;
+  border-radius: 10px;
+  position: absolute;
+  animation: showMe 1.6s linear infinite 0s forwards;
+  animation-play-state: paused;	
+}
+
+.skillImg3:hover img{
+animation-play-state: running;
+}
+
+.skillImg3 img:nth-child(1){
+z-index: 9;
+}
+.skillImg3 img:nth-child(2){
+animation-delay: 0.2s;
+z-index: 8;
+}
+.skillImg3 img:nth-child(3){
+animation-delay: 0.4s;
+z-index: 7;
+}
+.skillImg3 img:nth-child(4){
+animation-delay: 0.6s;
+z-index: 6;
+}
+.skillImg3 img:nth-child(5){
+animation-delay: 0.8s;
+z-index: 5;
+}
+.skillImg3 img:nth-child(6){
+animation-delay: 1.0s;
+z-index: 4;
+}
+.skillImg3 img:nth-child(7){
+animation-delay: 1.2s;
+z-index: 3;
+}
+.skillImg3 img:nth-child(8){
+animation-delay: 1.4s;
+z-index: 2;
+}
+.skillImg3 img:nth-child(9){
+animation-delay: 1.6s;
+z-index: 1;
+}
+
+@keyframes showMe {
+  0% { visibility: visible; z-index: 100; }
+  12.5% { visibility: visible; z-index: 100; }
+  25% { visibility: hidden; z-index: 0; }
+  100% { visibility: hidden; z-index: 0; }
+}
+
+/****************************************************************/
+
+
+
+
+
+/***Portfolio section *******************************************/
+
+
+.portfolio-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+
+}
+
+.portfolio-item:last-child{
+  margin-bottom: 0;
+}
+
+.portfolio-img{
+  flex: 1;
+}
+
+.portfolio-description{
+  flex:1;
+  line-height: 1.5;
+  padding: 2.5rem;
+ 
+}
+
+.portfolio p{
+  font-size: 3.5rem;
+}
+
+.portfolio a{
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #990099;
+}
+
+.portfolio-description h1{
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: #990099;
+  font-family: "Breathing"; 
+  
+}
+
+
+.has-margin-right{
+  margin-right: 5rem;
+}
+
+
+/****************************************************************/
+
+

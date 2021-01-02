@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+	 color: #B9CFD0;
+	 text-decoration: none;
+	 border-bottom: 1px solid #B9CFD0;
+}
+
+
+/*Cloud Header **************************************************************************************/
+.cloudEffect{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1551748629-08d916ed6682?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1929&q=80");
+    background-size: cover;
+    background-position:bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    
+}
+
+.cloudEffect a{
+    color: white;
+    text-decoration: none;
+	font-family: 'Fredoka One', cursive;
+    font-size: 1vw;
+    background-color: rgb(252, 182, 183);
+    border-radius: 5rem;
+    padding: 5px;
+}
+
+.cloudEffect a:hover{
+    background-color: rgb(228, 152, 184);
+    
+}
+
+.linkPlacement{
+	top: 10px;
+	left: 10px;
+	position: absolute;
+	
+}
+
+
+.cloudEffect #text{
+    position: relative;
+    font-size: 5rem;
+    color: white;
+    font-weight: lighter;
+    padding-bottom: 6rem;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+
+}
+
+.headingText{
+    
+    padding-bottom: 6rem;
+   
+}
+
+.cloudEffect .clouds{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.cloudEffect .clouds img{
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+    animation: animate calc(3s * var(--i)) linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: scale(1);
+
+    }
+
+    25%, 75%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+        transform: scale(3);
+    }
+}
+
+/***********************************************************************************************/
+
+
+
+
+
+
+/*TIMELINE**************************************************************************************/
+ .letterTimeline {
+	 background: white;
+	 margin: 0px;
+	 padding: 0px;
+     font-family: 'Patrick Hand', cursive;
+	 font-size: 15px;
+	 line-height: 26px;
+	 color: #B9CFD0;
+	 overflow-x: hidden;
+     overflow-y: scroll;
+     
+}
+
+
+
+h2{
+    font-family: 'Fredoka One', cursive;
+	font-weight: lighter;
+	background-color: #60dfcd;
+	background-image: linear-gradient(to right, #60dfcd 0%, #1e9afe 74%);
+	-webkit-background-clip: text;
+		background-clip: text;
+	-webkit-text-fill-color: transparent;
+	
+}
+ .header {
+    
+	 text-align: center;
+	 position: relative;
+	 z-index: 1;
+	background-color: white;
+}
+ .header .IntroHeader {
+	 padding: 7% 30px;
+}
+ .header .title {
+	 padding: 0 30px 0 30px;
+	 font-size: 60px;
+	 line-height: 1em;
+	 letter-spacing: 10px;
+     color: black;
+     
+     
+}
+ .header .description {
+	 margin: 30px auto;
+	 max-width: 600px;
+	 font-size: 18px;
+	 line-height: 2em;
+     color: #FFF;
+     font-family: 'Patrick Hand', cursive;
+     position: relative;
+    color: black;
+    font-size: 1.2rem;
+    padding: 75px 100px;
+}
+ .main-content {
+	 margin: 0px auto;
+	 position: relative;
+}
+ .main-content .section-inner, .main-content .mail-container {
+	 *zoom: 1;
+}
+ .main-content .section-inner:before, .main-content .section-inner:after, .main-content .mail-container:before, .main-content .mail-container:after {
+	 content: "";
+	 display: table;
+}
+ .main-content .section-inner:after, .main-content .mail-container:after {
+	 clear: both;
+}
+ .footer {
+	 background: white;
+	 padding: 150px 0px 300px 0px;
+	 position: relative;
+	 z-index: 1;
+}
+ .footer .mailEnd {
+	 text-align: center;
+	 font-size: 18px;
+	 line-height: 36px;
+}
+ .footer .mailEnd p {
+	 display: block;
+	 margin: 0px auto 30px auto;
+	 max-width: 300px;
+	 clear: both;
+}
+ .section .section-inner {
+	 margin: 0px auto;
+	 width: 1024px;
+}
+ @media only screen {
+	 .section .section-inner {
+		 width: auto;
+		 max-width: 1024px;
+	}
+}
+ .progressBarCover {
+	 position: fixed;
+     top: 0px;
+	 bottom: 0px;
+	 left: 50%;
+}
+
+ .progressBarCover .stem, .progressBarCover .progressBarBackground {
+	 position: absolute;
+	 top: 0px;
+	 left: -30px;
+	 width: 60px;
+}
+ .progressBarCover .stem {
+	height: 100%;
+	background: linear-gradient(to bottom, #00d2ff 0%, #3a47d5 100%);
+     
+}
+ .progressBarCover .progressBarBackground {
+	background-color: #f6fba2;
+	background-image: linear-gradient(to bottom, #f6fba2 0%, #20ded3 74%);
+	
+	height: 50%;
+}
+ .progressPadding, .single-stem-icon {
+	 width: 60px;
+	 height: 60px;
+	 margin: 0px auto;
+	 background: transparent url(../img/progressRod.png) repeat-y top center;
+}
+ .single-stem-icon.scroll-to-top {
+	 cursor: pointer;
+	 background-image: url(../img/paper-plane.png);
+}
+ .mail-container {
+	 *zoom: 1;
+}
+ .mail-container:before, .mail-container:after {
+	 content: "";
+	 display: table;
+}
+ .mail-container:after {
+	 clear: both;
+}
+ .mail-container .post {
+	 position: relative;
+	 width: 432px;
+	 padding: 0px 0px 60px 0px;
+	 clear: both;
+	 opacity: 1;
+}
+ 
+.mail-content img{
+    width: 45vw;
+}
+ .mail-container .post:hover .mail-content, .mail-container .post.active .mail-content {
+	 opacity: 1;
+}
+
+ 
+
+ .mail-container .post.pencil-icon .mail-icon-display .icon {
+	 background-image: url(../img/pencil.png);
+}
+
+ .mail-container .post.mail-icon .mail-icon-display .icon {
+	 background-image: url(../img/mail.png);
+}
+ .mail-container .post.writing-icon .mail-icon-display .icon {
+	 background-image: url(../img/book-and-pencil.png);
+}
+ .mail-container .post .mail-icon-display {
+	 position: absolute;
+	 top: 0px;
+	 bottom: 0px;
+	 width: 60px;
+}
+ .mail-container .post .mail-icon-display .icon {
+	 background: transparent no-repeat center center;
+	 height: 60px;
+	 width: 60px;
+}
+ .mail-container .post .mail-icon-display .progress-bar-continuation {
+	 position: absolute;
+	 top: 60px;
+	 bottom: 0px;
+	 left: 0px;
+	 right: 0px;
+	 background: transparent url(../img/progressRod.png) repeat-y top center;
+}
+ .mail-container .post .mail-content {
+	 opacity: .3;
+}
+ .mail-container .post .mail-content .meta {
+	 color: rgba(255,255,255,0.3);
+	 margin: 0px 0px 15px 0px;
+	 letter-spacing: 1px;
+	 opacity: 0;
+}
+ .mail-container .post .mail-content .mail-date {
+	 font-size: 32px;
+	 line-height: 42px;
+	 margin: 0px 0px 15px 0px;
+}
+
+.main-content, .main-content .section-inner {
+	max-width: none;
+}
+.progressBarCover {
+	left: 80px;
+}
+.progressPadding, .single-stem-icon {
+	margin: 0px;
+	float: left;
+	margin-left: 50px;
+}
+.mail-container .post, .mail-container .post:nth-child(even), .mail-container .post:nth-child(odd) {
+	width: auto;
+	margin-left: 110px;
+	float: none;
+}
+.mail-container .post .mail-icon-display, .mail-container .post:nth-child(even) .mail-icon-display, .mail-container .post:nth-child(odd) .mail-icon-display {
+	left: -60px;
+	right: auto;
+}
+.mail-container .post .mail-content {
+	padding: 0px 50px;
+}
+
+/***********************************************************************************************/

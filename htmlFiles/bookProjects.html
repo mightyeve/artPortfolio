@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Friends Book</title>
+    <link rel="stylesheet" href="../cssFiles/bookProjects.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body> 
+    
+   
+
+    <section class="zoom"> 
+        <div class = "linkPlacement">
+        <a href="profile.html" class = "active" target="_self" title="Return to Home Page"><i class="fas fa-rocket"> </i> Home</a>
+        </div>
+        
+        <img src="../img/planet1.png" alt="" id="layer1">
+        <img src="../img/planet2.png" alt="" id="layer2">
+        <div> 
+            <h1 class = "textFirst">Space<br>Friends:<br>an original<br>series</h1>
+        </div>
+  
+    </section>
+
+    <section class="content">
+        <h2>Hello,</h2>
+        <p>
+            This is a project I've been working on since the spring of 2020. It started as an art project for my college class
+            but I wanted to evolve it into something bigger. I love storytelling and the atmosphere of children's books. I think
+            that kids should have a hopeful outlook on the world and I want to communicate to them that the world is a wonderful place
+            to live. Reality is dark and scary, but not 100%. 
+            Certainly, the gravity of current events and worldly issues will always remain; however, love and joy outweigh it all in the end of the day.
+            I want to promote of message of self love, love for the Earth, our home, and love for each other.<br><br>
+            I now invite you, to a journey into the galaxy.
+        </p>
+    </section>
+
+    <div class = "story1">
+        <img src="../img/Page1.png" alt="">
+        <img src="../img/Page2.png" alt="">
+        <img src="../img/Page3.png" alt="">
+        <img src="../img/Page4.png" alt="">
+        <img src="../img/Page5.png" alt="">
+        <img src="../img/Page6.png" alt="">
+        <img src="../img/Page7.png" alt="">
+        <img src="../img/Page8.png" alt="">
+        <img src="../img/Page9.png" alt="">
+        <img src="../img/Page10.png" alt="">
+        <img src="../img/Page11.png" alt="">
+        <img src="../img/Page12.png" alt="">
+    </div>
+
+    <script type="text/javascript">
+        var layer1 = document.getElementById('layer1') ;
+        scroll = window.pageYOffset;
+        document.addEventListener('scroll', function(e){
+            var offset = window.pageYOffset;
+            scroll = offset;
+            layer1.style.width = (100 + scroll/5) + '%';
+        });
+
+        var layer2 = document.getElementById('layer2'); 
+        scroll = window.pageYOffset;
+        document.addEventListener('scroll', function(e){
+            var offset = window.pageYOffset;
+            scroll = offset;
+            layer2.style.width = (100 + scroll/5) + '%';
+            layer2.style.left = -scroll/20 + '%';
+        });
+    </script>
+</body>
+</html>

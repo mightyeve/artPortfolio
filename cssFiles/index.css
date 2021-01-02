@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Breathing';
+    src: url('../fonts/Breathing.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Breathing';
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+
+
+.backgroundImages{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    animation: animate 16s ease-in-out infinite;
+    background-size: cover;
+  }
+  
+  @keyframes animate{
+    0%,100%{
+      background-image: url(https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1051&q=80);
+    }
+    25%{
+      background-image: url(https://images.unsplash.com/photo-1554104707-a76b270e4bbb?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80);
+    }
+    50%{
+      background-image: url(https://images.unsplash.com/photo-1448932133140-b4045783ed9e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1051&q=80);
+    }
+    75%{
+      background-image: url(https://images.unsplash.com/photo-1554537173-c4daede7794b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80);
+    }
+  }
+  
+  
+  
+  
+  .introduction{
+    justify-content: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    font-size: 5rem;
+    text-align: center;
+    position: relative;
+    top: 35%;
+    font-weight: bold;
+  }
+  
+
+h1{
+    font-size: 4rem;
+    padding: 1rem;
+}
+
+
+h2{
+    font-size: 2rem;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+  
+a:hover{
+    background-image: url(../img/paintStroke.gif);
+    background-size: cover;
+    cursor: pointer;
+    color: black;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-7px);
+    border: none;
+}
+
+a{
+    position: relative;
+    width: 100px;
+    height: 50px;
+    
+    padding: 0.5rem 1.2rem;
+    font-family: "Breathing";
+    font-size: 2rem;
+    border-radius: 8px;
+    color: black;
+    font-weight: bolder;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+   
+}
+
