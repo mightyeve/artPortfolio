@@ -78,7 +78,7 @@ h2{
 
   
 a:hover{
-    background-image: url(../img/paintStroke.gif);
+    background-image: url(/img/paintStroke.gif);
     background-size: cover;
     cursor: pointer;
     color: black;
