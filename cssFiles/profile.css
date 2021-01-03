@@ -2,14 +2,14 @@
 
 @font-face {
     font-family: 'Breathing';
-    src: url('/fonts/Breathing.woff') format('woff');
+    src: url('fonts/Breathing.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'parkway-lush';
-    src: url('/fonts/parkway-lush.woff') format('woff');
+    src: url('fonts/parkway-lush.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -226,7 +226,7 @@ header{
 }
 
 .profile-preview {
-  background-image: url(/img/profile.JPG);
+  background-image: url(img/profile.JPG);
   background-size: cover;
   background-repeat: no-repeat;
   width: 700px;
