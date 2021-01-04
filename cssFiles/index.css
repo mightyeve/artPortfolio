@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Breathing';
-    src: url('/fonts/Breathing.woff') format('woff');
+    src: url('fonts/Breathing.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -78,7 +78,7 @@ h2{
 
   
 a:hover{
-    background-image: url(/img/paintStroke.gif);
+    background-image: url(img/paintStroke.gif);
     background-size: cover;
     cursor: pointer;
     color: black;
